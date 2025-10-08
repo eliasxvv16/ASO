@@ -1,0 +1,23 @@
+<#
+.SYNOPSIS
+        Script de ejemplo condicional.
+ 
+ .DESCRIPTION
+ 
+        Condicional "par o impar"
+ 
+ 
+ .PARAMETER  [Nombre de Parametro]
+ 
+        No hay ningun parametro
+ 
+.EXAMPLE
+ 
+        /condicional.ps1
+ 
+.NOTES
+ 
+        Autor:   SAMUEL RUIZ
+        Fecha:   29/09/2025
+        Version:  1.0
+#>
