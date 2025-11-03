@@ -1,24 +1,18 @@
-# Gestión del Servicio KEA con systemctl
+## 🧩 Proyecto de Scripting en PowerShell
 
----
+Durante este proyecto he aprendido los fundamentos del scripting en **PowerShell**, utilizando **funciones**, **menús**, **bucles**, **arrays**, **parámetros** y conceptos básicos de **automatización**.
 
-## Control del servicio KEA con systemctl
-- **Que es `systemctl`?**
-  
-  Es una herramienta de línea de comandos en sistemas operativos Linux que utiliza systemd para gestionar y controlar los servicios y el sistema en general. Permite a los usuarios iniciar, detener, reiniciar, habilitar y deshabilitar servicios, verificar su estado, y administrar otros aspectos del arranque y funcionamiento del sistema operativo. 
----
-- **Comandos principales:**
-  - `start kea-dhcp4.service` — Inicia el servicio DHCPv4.
-  - `stop kea-dhcp4.service` — Detiene el servicio.
-  - `restart kea-dhcp4.service` — Reinicia el servicio para aplicar cambios.
-  - `status kea-dhcp4.service` — Consulta el estado actual del servicio.
+Se han desarrollado **tres scripts principales**:
 
-- **systemd** administra el proceso y garantiza la ejecución continua del daemon KEA.
+1. **Hello World** – Primer contacto con PowerShell.  
+2. **Arrays** – Ejercicios básicos de manejo de arrays.  
+3. **Ejercicios avanzados** – Conjunto de 8 tareas prácticas que incluyen:
+   - Comprobar si un número es par o impar.  
+   - Solicitar la edad del usuario y mostrar mensajes personalizados.  
+   - Generar tablas de multiplicar y sumas del 1 al 100.  
+   - Crear y usar menús interactivos.  
+   - Manipular arrays con bucles `foreach`.  
+   - Crear carpetas y ficheros según respuestas del usuario.  
+   - Listar y clasificar ficheros de un directorio.  
 
-- **Visualización de logs y errores:**
-  - `journalctl -u kea-dhcp4.service` — Muestra los logs generados por el servicio.
-
----
-
-## Diagrama de gestión:
-![](img/eliassdiagram.png)
+📜 Este proyecto me ha permitido reforzar la lógica de programación y la automatización con PowerShell.
