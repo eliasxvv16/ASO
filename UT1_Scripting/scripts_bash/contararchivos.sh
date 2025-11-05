@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
 # Nombre: saludo.sh
-# Descripción: Saluda a la persona pasada como parámetro.
+# Descripción: Contar los archivos en un directorio dado.
 # Autor: Elias Halloumi El Amraoui
-# Uso: ./saludo.sh NOMBRE
+# Uso: ./contararchivos.sh DIRECTORIO
 # Versión: 1.0
 # Fecha: 2025-11-03
 
