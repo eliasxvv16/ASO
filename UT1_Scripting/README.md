@@ -20,13 +20,21 @@ La organización del proyecto sigue esta estructura:
 ```
 UT1_Scripting/
 ├── scripts_bash/
-│ ├── hello_world.sh
-│ ├── ej1.sh
-│ └── ejercicios_avanzados.sh
+│ ├── Backup_Directorio.sh
+│ ├── Backup_Directorio_Extension.sh
+├ ├── contararchivos.sh
+├ ├── saludo.sh
+│ └── README.md
 └── scripts_powershell/
-├── hello_world.ps1
-├── ej1.ps1
-└── ejercicios_avanzados.ps1
+├ ├── calcula-cuadrado.ps1
+├ ├── calcula-nota.ps1
+├ ├── edad-usuario.ps1
+├ ├── muestra-menu.ps1
+├ ├── num-par.ps1
+├ ├── pinta-array.ps1
+├ ├── suma-nume.ps1
+├ ├── tabla-multiplicar.ps1
+└── README.md
 ```
 ## 💻 PowerShell
 En PowerShell he aprendido:
