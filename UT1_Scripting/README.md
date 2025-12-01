@@ -14,6 +14,20 @@ Este proyecto me ha permitido aprender y practicar los fundamentos del **scripti
 - Diferencias entre la ejecución directa y la ejecución mediante el intérprete.
 - Trabajo con menús, entrada de usuario e interacción básica.
 
+## 📂 Estructura de la Unidad
+
+La organización del proyecto sigue esta estructura:
+```
+UT1_Scripting/
+├── scripts_bash/
+│ ├── hello_world.sh
+│ ├── ej1.sh
+│ └── ejercicios_avanzados.sh
+└── scripts_powershell/
+├── hello_world.ps1
+├── ej1.ps1
+└── ejercicios_avanzados.ps1
+```
 ## 💻 PowerShell
 En PowerShell he aprendido:
 - A utilizar funciones, menús interactivos y arrays.
