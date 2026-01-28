@@ -1,5 +1,6 @@
 # 🖥️ Administración Remota de Sistemas en Red  
 **Asignatura:** Administración de Sistemas Operativos  
+**Autor** Elias Halloumi El Araoui
 **Unidad:** UT4 – Administración Remota  
 **Curso:** 2025/2026  
 
@@ -26,7 +27,7 @@ La práctica se divide en dos partes:
 | Servidor Windows   | Windows Server 2025    | Servidor administrado (WAC) |
 | Servidor Linux     | Ubuntu Server 24.04    | Servidor administrado (Cockpit) |
 
-Todas las conexiones se realizan desde el navegador del Windows 11 mediante HTTPS.
+Todas las conexiones se realizan desde el navegador del Windows 11.
 
 ---
 
@@ -34,27 +35,28 @@ Todas las conexiones se realizan desde el navegador del Windows 11 mediante HTTP
 
 ### Acceso a Windows Admin Center
 
-Desde el navegador del Windows 11 se accede a:
+Desde el navegador del Windows 11 accedemos a:
 https://localhost:PUERTO
 
 
-Se inicia sesión con un usuario válido del sistema.
+iniciamos sesión con un usuario válido del sistema  (local/dominio).
 
 📸 Evidencia:  
-`capturas/wac_acceso.png`
+![](/UT4%20Admin%20Remota/img/cap1.png)
 
 ---
 
 ### Administración remota del Windows Server
 
-Desde la consola de WAC se agrega el Windows Server 2025 y se comprueba que es posible:
+Desde la consola de WAC agregamos el Windows Server 2025 y compruebamos que es posible:
 
 - Ver información del sistema
 - Monitorizar CPU y memoria
 - Acceder a servicios y eventos
 
-📸 Evidencia:  
-`capturas/wac_servidor.png`
+📸 Evidenciaa:  
+![](/UT4%20Admin%20Remota/img/cap2.png)
+![](/UT4%20Admin%20Remota/img/cap3.png)
 
 ---
 
@@ -62,7 +64,7 @@ Desde la consola de WAC se agrega el Windows Server 2025 y se comprueba que es p
 
 | Sistema administrado | Herramienta | Protocolo | Puerto |
 |----------------------|-------------|-----------|--------|
-| Windows Server 2025  | WAC         | HTTPS     | 6516   |
+| Windows Server 2025  | WAC         | HTTP     | 6516   |
 
 ---
 
@@ -70,31 +72,32 @@ Desde la consola de WAC se agrega el Windows Server 2025 y se comprueba que es p
 
 ### Comprobación del servicio Cockpit
 
-En el servidor Ubuntu se verifica que el servicio está activo.
+En el servidor Ubuntu verificamos que el servicio está activo.
 
 📸 Evidencia:  
-`capturas/cockpit_servicio.png`
+![](/UT4%20Admin%20Remota/img/cap4.png)
 
 ---
 
 ### Creación de usuario remoto
 
-Se crea un usuario específico no root para la administración remota mediante Cockpit.
+creamos un usuario específico no root para la administración remota mediante Cockpit.
 
 📸 Evidencia:  
-`capturas/cockpit_usuario.png`
+![](/UT4%20Admin%20Remota/img/cap5.png)
 
 ---
 
 ### Acceso remoto desde Windows 11
 
-Desde el navegador del Windows 11 se accede a:
+Desde el navegador del Windows 11 accedemos a:
 https://IP_DEL_UBUNTU:9090
 
-Se comprueba la monitorización del sistema (CPU y memoria).
+Comprobamos la monitorización del sistema (CPU y memoria).
 
 📸 Evidencia:  
-`capturas/cockpit_monitorizacion.png`
+![](/UT4%20Admin%20Remota/img/cap6.png)
+![](/UT4%20Admin%20Remota/img/cap7.png)
 
 ---
 
@@ -102,12 +105,12 @@ Se comprueba la monitorización del sistema (CPU y memoria).
 
 | Sistema        | Usuario remoto | Herramienta | Protocolo | Puerto |
 |----------------|----------------|-------------|-----------|--------|
-| Ubuntu Server  | admincockpit   | Cockpit     | HTTPS     | 9090   |
+| Ubuntu Server  |    cockpit     | Cockpit     | HTTPS     | 9090   |
 
 ---
 
 ## ✅ Conclusión
 
 Se ha verificado que es posible administrar de forma remota sistemas Windows y Linux
-mediante interfaces web seguras, utilizando usuarios específicos y protocolos cifrados,
+mediante interfaces web, utilizando usuarios específicos y protocolos cifrados,
 cumpliendo los objetivos planteados en la práctica.
