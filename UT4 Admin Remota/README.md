@@ -1,6 +1,6 @@
 # 🖥️ Administración Remota de Sistemas en Red  
-**Asignatura:** Administración de Sistemas Operativos  
-**Autor** Elias Halloumi El Araoui
+**Asignatura:** Administración de Sistemas Operativos   
+**Autor** Elias Halloumi El Amraoui  
 **Unidad:** UT4 – Administración Remota  
 **Curso:** 2025/2026  
 
