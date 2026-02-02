@@ -30,7 +30,7 @@ sudo systemctl status ssh
 ```
 
 📸 Evidencia 1 – Servicio SSH activo:
-[](/UT4%20Admin%20Remota/img/evid1.png)
+![](/UT4%20Admin%20Remota/img/evid1.png)
 
 ✅ Paso 2: Creación de usuario dedicado remoto_ssh
 Creamos un usuario exclusivo para acceso SSH (sin privilegios de root):
@@ -41,7 +41,7 @@ sudo passwd remoto
 ```
 
 📸 Evidencia 2 – Usuario creado:
-[](/UT4%20Admin%20Remota/img/evid2.png)
+![](/UT4%20Admin%20Remota/img/evid2.png)
 
 ✅ Paso 3: Generación de claves en Windows 11 con PuTTYgen
 
@@ -52,7 +52,7 @@ sudo passwd remoto
 - Copiar clave pública al portapapeles
 
 📸 Evidencia 3 – Claves generadas (permisos 600/700):
-[](/UT4%20Admin%20Remota/img/evid3.png)
+![](/UT4%20Admin%20Remota/img/evid3.png)
 
 ✅ Paso 4: Configuración de clave pública en Ubuntu
 
@@ -65,7 +65,7 @@ echo "clave_publica_aqui" | sudo -u remoto tee -a ~/.ssh/authorized_keys
 ```
 
 📸 Evidencia 4 – Estructura de claves en servidor:
-[](/UT4%20Admin%20Remota/img/evid4.png)
+![](/UT4%20Admin%20Remota/img/evid4.png)
 
 ✅ Paso 5: Prueba inicial de acceso (antes de bloquear contraseñas)
 Configuramos PuTTY:
