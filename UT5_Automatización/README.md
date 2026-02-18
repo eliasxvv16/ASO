@@ -148,11 +148,11 @@ Resultado esperado para usuario no autorizado: **Acceso denegado**
 
 
 ### 2️⃣ Permisos de recurso compartido y NTFS 
-Carpeta Admin
+# Carpeta Admin
 ![](/UT5_Automatización/img/im2.png)
-Carpeta Informatica
+# Carpeta Informatica
 ![](/UT5_Automatización/img/im3.png)
-Carpeta Comun
+# Carpeta Comun
 ![](/UT5_Automatización/img/im4.png)
 
 ### 3️⃣ GPO creada y vinculada en GPMC
