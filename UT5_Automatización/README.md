@@ -21,7 +21,7 @@ Todo debe funcionar sin intervención manual del usuario.
 - Windows Server 2025 (Controlador de Dominio)
 - Windows 11 (cliente unido al dominio)
 - Red privada interna
-- Dominio: `[INICIALES].local`
+- Dominio: `ehe.local`
 
 ---
 
@@ -93,7 +93,7 @@ C:\Compartidas\
 Nombre de la GPO:
 
 ```
-Mapeo-Unidades-[INICIALES]
+Mapeo-Unidades-ehe
 ```
 
 Ruta en GPMC:
@@ -144,40 +144,51 @@ Resultado esperado para usuario no autorizado: **Acceso denegado**
 ## 📸 Evidencias — Tarea 1
 
 ### 1️⃣ Estructura de carpetas en el servidor
-📌 Insertar captura aquí  
-`/images/t1_estructura_carpetas.png`
+![](/UT5_Automatización/img/im1.png) 
 
-### 2️⃣ Permisos de recurso compartido y NTFS (ejemplo Admin)
-📌 Insertar capturas aquí  
-`/images/t1_permisos_compartir.png`  
-`/images/t1_permisos_seguridad.png`
+
+### 2️⃣ Permisos de recurso compartido y NTFS 
+Carpeta Admin
+![](/UT5_Automatización/img/im2.png)
+Carpeta Informatica
+![](/UT5_Automatización/img/im3.png)
+Carpeta Comun
+![](/UT5_Automatización/img/im4.png)
 
 ### 3️⃣ GPO creada y vinculada en GPMC
-📌 Insertar captura aquí  
+![](/UT5_Automatización/img/im5.png) 
 `/images/t1_gpo_creada.png`
 
 ### 4️⃣ Configuración de las unidades dentro de la GPO
-📌 Insertar capturas aquí  
-`/images/t1_config_z.png`  
-`/images/t1_config_y.png`  
-`/images/t1_config_x.png`
+![](/UT5_Automatización/img/im6.png)
+![](/UT5_Automatización/img/im8.png)
+![](/UT5_Automatización/img/im10.png)
+
 
 ### 5️⃣ Segmentación configurada (Item-level targeting)
-📌 Insertar capturas aquí  
-`/images/t1_segmentacion_admin.png`  
-`/images/t1_segmentacion_info.png`
+
+![](/UT5_Automatización/img/im7.png) 
+![](/UT5_Automatización/img/im9.png)
+
+Despues de esto vinculamos la GPO a:
+UO_Administracion
+UO_Informatica
+UO_Usuarios
+
+![](/UT5_Automatización/img/im11.png)
 
 ### 6️⃣ Explorador de user_admin1
-📌 Insertar captura aquí  
-`/images/t1_admin_explorer.png`
+![](/UT5_Automatización/img/im12.png) 
+
 
 ### 7️⃣ Explorador de user_info1
-📌 Insertar captura aquí  
-`/images/t1_info_explorer.png`
+![](/UT5_Automatización/img/im13.png) 
+
 
 ### 8️⃣ Intento de acceso no autorizado (Acceso denegado)
-📌 Insertar captura aquí  
-`/images/t1_acceso_denegado.png`
+como usuario user_info vamos a intentar entrar a la carpeta admin
+![](/UT5_Automatización/img/im14.png) 
+
 
 ---
 
@@ -201,7 +212,7 @@ Archivo: `limpieza.ps1`
 Ubicación en el dominio:
 
 ```
-\\[dominio].local\SYSVOL\[dominio].local\scripts\
+\\ehe.local\SYSVOL\ehe.local\scripts\
 ```
 
 ---
@@ -211,7 +222,7 @@ Ubicación en el dominio:
 Nombre de la política:
 
 ```
-Mantenimiento-Automatico-[INICIALES]
+Mantenimiento-Automatico-ehe
 ```
 
 Ruta en GPMC:
@@ -265,26 +276,27 @@ C:\Logs
 ## 📸 Evidencias — Tarea 2
 
 ### 1️⃣ GPO creada y vinculada
-📌 Insertar captura aquí  
-`/images/t2_gpo_creada.png`
+![](/UT5_Automatización/img/im15.png) 
 
-### 2️⃣ Configuración completa de la tarea (General, Desencadenadores, Acciones)
-📌 Insertar capturas aquí  
-`/images/t2_general.png`  
-`/images/t2_trigger.png`  
-`/images/t2_accion.png`
+
+### 2️⃣ Configuración completa de la tarea
+
+![](/UT5_Automatización/img/im16.png) 
+![](/UT5_Automatización/img/im17.png) 
+![](/UT5_Automatización/img/im18.png) 
+
 
 ### 3️⃣ Tarea visible en el cliente (Task Scheduler)
-📌 Insertar captura aquí  
-`/images/t2_taskschd.png`
+![](/UT5_Automatización/img/im19.png) 
+
 
 ### 4️⃣ Ejecución correcta (Historial o estado correcto)
-📌 Insertar captura aquí  
-`/images/t2_ejecucion_ok.png`
+![](/UT5_Automatización/img/im20.png) 
+
 
 ### 5️⃣ Archivo log generado en C:\Logs
-📌 Insertar captura aquí  
-`/images/t2_log_generado.png`
+![](/UT5_Automatización/img/im21.png) 
+
 
 ---
 
