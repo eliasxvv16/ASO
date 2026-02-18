@@ -30,7 +30,7 @@ Todo debe funcionar sin intervención manual del usuario.
 Se ha creado la siguiente organización en el dominio:
 
 ```
-[INICIALES].local
+ehe.local
 ├── UO_Administracion
 ├── UO_Informatica
 ├── UO_Usuarios
@@ -107,13 +107,13 @@ Configuración de usuario
 
 ### 🔠 Unidades configuradas
 
-- **Z:** → `\\servidor\Compartida-Admin`
+- **Z:** → `\\DC\Admin`
   - Segmentación → Usuario miembro de `GRP_Administracion`
 
-- **Y:** → `\\servidor\Compartida-Info`
+- **Y:** → `\\DC\Informatica`
   - Segmentación → Usuario miembro de `GRP_Informatica`
 
-- **X:** → `\\servidor\Compartida-Todos`
+- **X:** → `\\DC\Comun`
   - Aplicable a todos
 
 La GPO se vinculó a:
@@ -134,7 +134,7 @@ La GPO se vinculó a:
 También se comprobó acceso directo por ruta UNC:
 
 ```
-\\servidor\Compartida-Admin
+\\DC\Admin
 ```
 
 Resultado esperado para usuario no autorizado: **Acceso denegado**
@@ -207,7 +207,7 @@ Implementar una política que:
 
 ## 📜 Script utilizado
 
-Archivo: `limpieza.ps1`
+Archivo: `Limpieza_Sistema.ps1`
 
 Ubicación en el dominio:
 
@@ -246,7 +246,7 @@ Configuración del equipo
 - Argumentos:
 
 ```
--ExecutionPolicy Bypass -File "\\\\[dominio].local\\SYSVOL\\[dominio].local\\scripts\\limpieza.ps1"
+-ExecutionPolicy Bypass -File "\\ehe.local\\SYSVOL\\ehe.local\\scripts\\Limpieza_Sistema.ps1"
 ```
 
 La GPO fue vinculada a:
